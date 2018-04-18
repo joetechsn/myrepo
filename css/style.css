@@ -1,0 +1,467 @@
+body{background:#f4f4f4;padding-top:50px; }
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Lato-Bold'), local('Lato-Bold'), url('../fonts/lato.woff2') format('woff2'), url('../fonts/Lato-Bold.woff') format('woff');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Montserrat-SemiBold'), local('Montserrat-SemiBold'), url('../fonts/montserrat_semibold.woff2') format('woff2'),url('../fonts/Montserrat-SemiBold.woff') format('woff');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/*!
+*Purpose:Wrapper
+*/	
+.mainWrapper {width:90%;margin:0 auto}
+.innerwrapper{width:84%;margin:0 auto}
+.goog-te-gadget{height:25px}
+.goog-te-gadget .goog-te-combo {width:150px ! important;margin-top: 17px !important;}
+.goog-logo-link {display:none !important;} 
+.goog-te-combo{color:#000 !important;height:20px ! important;font-size:12px ! important;border:1px solid #ccc; -moz-appearance: menulist;
+    -webkit-appearance: menulist;-ms-appearance: menulist; -o-appearance: menulist; appearance: menulist;}
+.goog-te-gadget{color: transparent !important;}
+.ip_googletranslate{float:left}
+/*!
+*Purpose:Header
+*/	
+.navbar-brand{float:none}
+.navbar  .wrapper ,.mainNav {background:#fff ! important}
+.navbar-header{background:#fff ! important}
+.logoTitle{color:#424270 ! important;font-family:"lato";font-weight: bold;}
+.navbar-nav > li > a {padding:10px 10px;border-bottom:1px solid #4690b1}
+.dropdown-toggle > img {display:none ;}
+.nav > li > a:hover, .nav > li > a:focus {background-color: #fff;color: #000;text-decoration: none;}
+.nav-tabs > li > a {font-size: 12px;background: #f4f4f4;font-family: "Montserrat";font-weight: bold;}
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {color:#286090;font-weight:bold;background: #f4f4f4;}
+.mainNav .navbar-nav  li{font-size: 13px;letter-spacing: 0px;line-height: 50px;color: #fff ! important;font-family: "Montserrat";font-weight: bold;}
+.navbar {min-height: 33px;margin-bottom:0px}
+.navbar-form {margin:4px 0 }
+.mainNav .nav > li {margin: 0 5px;}
+.navbar-brand{height: auto;    padding: 15px 5px 0 5px;}
+.number{margin: 17px 10px;font-weight: bold;font-family: lato;float: left;color: #db3e37;font-size:11px}
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {background-color:#ff0000;border-color:#ff0000;}
+.navbar-nav > li > a{border-bottom:none ! important;}
+.line{color:#ccc;font-weight:normal}
+.fbDiv span:nth-child(2){color:#000 ! important; }
+.fbDiv span:nth-child(1){padding-left:0px}
+.fbDiv span:nth-child(2){padding-right:0px} 
+.pdLeft{margin-left:0px !important;}
+.fbDiv{margin-left:0px !important;}
+#planLimits  .optionCont{border-bottom:1px solid #CCC} 
+.dropdown-menu > li > a {font-family: arial;}
+.navbar-default {background-color: #fff;}
+sup {font-family: arial;font-size: 12px; top: -6px;}
+.logotext{float:left; height: 60px;padding-top: 15px;}
+.navbar-default {background-color: #fff !important;}
+.mainNav .navbar-nav > li {font-size: 10px !important;}
+.shareIcons{display:none}
+.shareIcons .glyphicon-envelope{color:#00a1ff;font-size:14px;}
+.shareIcons a{margin-right:10px ! important}
+.shareIcons a:nth-child(1) img{width:auto !important;height:auto !important;}
+.shareIcons a:nth-child(2) img{width:15px !important;height:15px !important;}
+
+.glyphicon-refresh-animate {
+    -animation: spin .7s infinite linear;
+    -webkit-animation: spin2 .7s infinite linear;
+}
+
+@-webkit-keyframes spin2 {
+    from { -webkit-transform: rotate(0deg);}
+    to { -webkit-transform: rotate(360deg);}
+}
+
+@keyframes spin {
+    from { transform: scale(1) rotate(0deg);}
+    to { transform: scale(1) rotate(360deg);}
+}
+/*!
+*Purpose:Section
+*/	
+
+.maincontent{margin-top:20px}
+.banner{width: 100%;margin-bottom:20px;}
+.share{margin-bottom:20px}
+.share img{margin-right:5px}
+.flrgt{float:right}
+.title{font-weight:bold ! important;margin-bottom:10px;font-family: "Montserrat";}
+.form-control {height: 22px;padding: 0px 0px;box-shadow:none ! important}
+.maincontent label{color: #17739d;font-size: 14px;font-family: "Lato";font-weight: bold;}
+.rightCont div{margin-bottom:10px}
+.nav-tabs{width: 350px;margin: 0 auto 25px;}
+.maincontent p{font-size:13px;margin-bottom:0px ! important;}
+.amount{margin:10px 0px;color: #17739d;font-weight:bold}
+.glyphicon-earphone{color:#fff;font-size:9px;top:1px}
+.phone{background: #db3e37;width: 17px;height:17px;padding: 0px 4px;border-radius: 18px;float:left;margin-right:5px}
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus{border-bottom:2px solid #17739d;border-top:none;border-left:none;border-right:none;}
+.nav-tabs{border-bottom:none;}
+.nav-tabs > li > a:hover {border-color:#fff }
+.active .icon {  width: 0; height: 0; border-left: 7px solid transparent;border-right: 7px solid transparent;  
+  border-top: 7px solid #17739d;position:absolute;margin-left: 72px;}
+.arrowright{width: 0; height: 0; border-left:7px solid #17739d;border-top:5px solid transparent; border-bottom:5px solid transparent;position:absolute;margin-left:5px;margin-top:7px}
+.tab-content .form-control {width: 150px;}
+.maincontent .planContent a{cursor:pointer}
+.maincontent .planContent a{color: #17739d;font-size: 14px;font-weight:bold;}
+.number{padding-left:10px}
+.number a{color:#db3e37}
+p.subtext {font-family: "lato";font-size: 8px;}
+.planContent{background:#fff; margin: 10px 0;
+    padding: 10px 0;}
+ .tab-content .planContent p{font-family: "Lato";margin-top:15px}
+  .tab-content .planContent .rightCont p {color:#474747;margin-top:0px}
+  .tab-content .planContent .rightCont a{font-family: "Lato";font-weight: bold;font-style: italic;}
+.planContent label{margin-bottom:5px;}
+.share a{color:rgb(68,68,68);! important;font-size:13px; font-family: "Montserrat";font-weight:bold;}
+.styled-select select {-moz-appearance: none;background: transparent none repeat scroll 0 0;border: 0 none;font-size: 14px;line-height: 1;}
+select {-moz-appearance: none;-webkit-appearance: none;-ms-appearance:none;-o-appearance: none;appearance: none;}
+select::-ms-expand {display: none;}
+option, optgroup { -webkit-appearance: none;background:#fff;padding:3px 3px }
+.styled-select {background:#cbcbff url("../images/dropdown-arrow1.jpg") no-repeat scroll right 5px center;padding: 2px 0px;margin-right: 15px;
+    overflow: hidden;}
+.styled-select1 select {-moz-appearance: none; background: transparent none repeat scroll 0 0;border: 0 none;
+    font-size: 14px;line-height: 1;width: 100% ! important;}
+.styled-select1 {
+    background:#cbcbff url("../images/dropdown-arrow.jpg") no-repeat scroll right 5px center;padding: 2px 0px;
+    margin-right: 15px; overflow: hidden;}
+	.form-group select{padding-left:5px ! important;border-radius:2px ! important;  font-size: 12px;color: rgb(26,26,26);font-family:"Lato"}
+#selectoption li{list-style:none;padding:8px 0px;border-bottom: 1px solid #ccc;float:left;width:150px}
+#selectoption li:last-child{border-bottom:none;}
+#selectoption li span{color:red;margin-left:9%; float: right;margin-top: 8px;}
+
+#selectoption{border:1px solid #ccc;width:170px; bottom:10px; left:30%;  z-index: 9999;  position: fixed;   background: #fff;}
+
+#selectoption ul{padding:0px 10px 0px 10px}
+#selectoption .compareBtn{padding:0px 10px 10px 0px}
+#selectoption p{margin-top:0px ! important;font-family: "Montserrat";}
+#selectoption h2{font-size: 13px;
+padding: 10px;
+font-family: "Montserrat";
+font-weight: bold;
+letter-spacing: 0px;background-color: #cbcbff;}
+.popover-content {font-size:11px;padding: 4px 7px;font-family: arial;letter-spacing:0px;}
+.popover-title {background-color: #cbcbff;font-size:11px;border-bottom: 1px solid #ebebeb;border-radius:0px;font-weight:bold;}
+/* .popover-content {padding: 0px 14px;} */
+.popover-content #selectoption .amount{font-weight:normal;margin:0px;font-family: "Lato";} 
+.popover-content #selectoption p {font-size: 13px;font-weight: bold; font-family: montserrat;}
+/* .popover {border: 1px solid #ccc; border-radius: 0;padding: 0;left:15px ! important;position: fixed;  top: 70% ! important;left: 30% ! important;}
+ */.popover .arrow{display:none}.popover{width:200px;left:0px;border:1px solid #ccc;padding:0px}
+.popover-title {font-size:11px;padding: 4px 7px;font-family: arial;font-weight: bold;letter-spacing:0px;}
+.popover.bottom {margin-top: 5px;}
+.policy label{cursor:pointer}
+.deduct label{cursor:pointer}
+.popover-content #selectoption p {font-size: 13px;}
+/* .popover.top > .arrow {margin-left: -24px;} */
+.panel-heading{background:transparent; padding:0;}
+.panel-title  a{color: #fff;font-size: 13px;font-weight:bold;cursor:pointer;display:block;padding: 10px 15px; text-align: center;}
+.panel-title img{margin-right:10px}
+#filteraccordion .panel-title{font-family: "Montserrat";}
+.panel-group .panel-heading + .panel-collapse > .panel-body, .panel-group .panel-heading + .panel-collapse > .list-group {border-top:none;}
+#filteraccordion .panel-title span{background:transparent url("../images/dropdown-arrow.jpg") no-repeat scroll left 5px center;}
+#filteraccordion .panel-heading{background:#17739d ! important;}
+#filteraccordion .panel-heading a{text-align: left;}
+#filteraccordion  .form-group select{color:rgb(124,124,124);}
+.compareBtn{text-align:center;margin:5px 0px 5px 0px}
+.panel-body {padding: 15px 15px 5px 15px ;}
+.closeBtn{font-size: 14px;opacity: 0.6;margin-top: -28px;float: right;cursor: pointer;margin-right: 10px;font-family: arial;}
+.share a{margin-right:15px}
+li{list-style:none;}
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+.glyphicon-earphone{top:3px}
+}
+/*!
+*Purpose:Comparison Page
+*/	
+.comparisonPage .buynowBtn{text-align:center;margin:5px 0px 5px 0px}
+.comparisonPage .planOptions{margin-bottom:15px}
+.comparisonPage .optionCont > div{margin: 0 auto 5px; width: 230px;}
+.comparisonPage .optionCont{background:#fff;padding: 10px 0;border:none;}
+.comparisonPage .optionCont select {color:#000}
+.comparisonPage  .planOptions h3{background:#17739d;color:#fff;padding:15px 15px;text-align:center;font-family: "Montserrat";font-weight: bold;font-size:13px}
+.comparisonPage  .planOptions h4{font-family: "Montserrat";font-weight: bold;text-align:center;font-size:14px;padding:10px 10px 15px;color:#000}
+.comparisonPage  .planOptions h2{font-weight:bold;text-align:center;font-size:22px;padding:10px;color:#000;letter-spacing: 1px;font-family: "Montserrat";}
+.comparisonPage .accicon{border-left: 8px solid transparent;border-right: 8px solid transparent;border-top: 8px solid #17739d;height: 0;margin-left:48%;display:block; position:relative;text-align: center;top: 10px;width: 0;display:none}
+.comparisonPage .panel-heading a[aria-expanded="true"] .accicon{border-left: 8px solid transparent;border-right: 8px solid transparent;border-top: 8px solid #17739d;height: 0;margin-left:48%;display:block; position:relative;text-align: center;top: 10px;width: 0;}
+.comparisonPage .panel-heading a{background:#ebecf1;color:#000;font-family: montserrat;}
+.comparisonPage .panel-heading a[aria-expanded="true"] {background-color: #17739d;color:#fff;padding:12px 15px 3px;}
+.comparisonPage .panel{border:none;}
+.comparisonPage .planOptions .styled-select1{margin-right:0px}
+.comparisonPage.maincontent label {color: #000;padding-top: 4px;}
+.comparisonPage .data ul li{padding:15px 20px;border-bottom:1px solid #d7d7d7}
+.comparisonPage .data ul li:last-child{border-bottom:none}
+.comparisonPage .data ul li p span{color:#17739d;margin-right:10px;font-weight:bold;}
+.comparisonPage .comparisonPage .panel-body{padding:0px}
+.comparisonPage .data ul li p a{text-decoration:underline !important}
+.comparisonPage .data ul li .link{text-align:center}
+.comparisonPage .data ul li p{font-size:13px;}
+.comparisonPage  .panel-body{font-size:12px}
+.comparisonPage .glyphicon-align-justify{margin-right:5px}
+.comparisonPage .panel-body{padding:3px;}
+.text{padding:10px 15px}
+.fixedBen{background:#F7E9CF; padding:0px !important;}
+.fixedBen .block:nth-child(1){ padding-left:35px;background:#Fff ! important;}
+.block{width:47%;float:left;padding: 10px 15px;}
+.data li p:nth-child(2){margin-top:10px}
+
+ /* See Plan Detail Popup */	
+.seePlanDetail .optionCont > div{margin: 0 auto 10px; width: 230px;}
+.seePlanDetail .optionCont{padding: 10px 0;border:none; margin-top: 15px;}
+.seePlanDetail .optionCont select {color:#000}
+.seePlanDetail #seePlanDetail{margin:20px 0px}
+.seePlanDetail  .accicon{border-left: 8px solid transparent;border-right: 8px solid transparent;border-top: 8px solid #17739d;height: 0;margin-left:48%;display:block; position:relative;text-align: center;top: 10px;width: 0;display:block}
+.seePlanDetail .panel-heading a{background:#17739d;color:#fff;padding:12px 15px 3px;font-family: montserrat;}
+.seePlanDetail .panel-heading a[aria-expanded="false"] {background-color: #ebecf1;color:#000;padding:12px 15px 10px;}
+.seePlanDetail .panel-heading a[aria-expanded="false"]  .accicon{display:none;}
+.seePlanDetail .panel{border:none;}
+.seePlanDetail .planOptions .styled-select1{margin-right:0px}
+.seePlanDetail .maincontent label {color: #000;}
+.seePlanDetail .data ul li{padding:15px 20px;border-bottom:1px solid #d7d7d7}
+.data ul li p{font-family: "Lato";font-weight: bold;  }
+.seePlanDetail .data ul li p{font-family: "Lato";font-weight: bold;  color: #666;}
+.seePlanDetail .data ul li:last-child{border-bottom:none}
+.seePlanDetail .data ul li p span{color:#17739d;margin-right:10px;font-weight:bold;}
+.seePlanDetail .data ul li p span:nth-child(2){color:#000;margin-right:10px;font-weight:normal;}
+.seePlanDetail .comparisonPage .panel-body{padding:0px}
+.seePlanDetail .data ul li p a{text-decoration:underline !important}
+.seePlanDetail .data ul li .link{text-align:center}
+.seePlanDetail .data ul li p{font-size:13px;}
+.seePlanDetail  .panel-body{font-size:12px}
+.seePlanDetail .glyphicon-align-justify{margin-right:5px}
+.seePlanDetail .panel-body{padding:3px;background:#F4F4F4}
+.close {background: #000 !important; border-radius: 15px !important;color: #fff !important;font-size: 10px !important;font-weight: normal !important;opacity: 1 !important; padding: 7px 8px !important;margin-right: -12px;line-height:10px;font-family: arial;
+    margin-top: -12px;}
+.seePlanDetail{padding:40px; }
+.seePlanDetail h3{font-size:16px;font-weight:bold;font-family: montserrat;}
+.amount p{font-family: montserrat;}
+.dollar{font-size:16px;font-weight:bold;color:#17739d;}
+.boldtext{font-size:15px ! important;color:#000 ! important;}
+.seePlanDetail .link{text-align:left ! important;padding: 10px 0;}
+.glyphicon-arrow-right,.glyphicon-info-sign{margin-left:4px;color:#17739d  ! important;}
+.seePlanDetail .optionCont .glyphicon-info-sign{float: right;}
+.italics {font-size: 13px;font-style: italic;padding: 10px 0 0 20px;font-family: lato;}}
+.highlight{color:#016300 ! important}
+.condition{height:60px}
+.seePlanDetail .styled-select1{margin-right:0px;width:100px}
+.seePlanDetail  label {color: #17739d;   padding-top: 3px;font-family: lato;}
+.seePlanDetail .optionCont > div{margin: 0 auto 10px; width: 80%;}
+.seePlanDetail .optionCont > div span{float:left;margin-left:10px;font-size:10px;font-weight: bold; margin-top: 5px;font-family: lato;  color: #666;}
+.seePlanDetail .optionCont > div label span{ font-family: "Glyphicons Halflings";}
+ /* Checkbox */	
+.checkbox label {padding-left:0px;font-weight:bold;font-family: "Lato";font-weight: bold;}
+.checkbox label:after {content: '';display: table;clear: both;}
+.checkbox .cr {position: relative;display: inline-block;border: 1px solid #a9a9a9;border-radius: .20em;width: 1.2em;height: 1.2em;float: left;
+ margin-right: .5em;}
+.checkbox .cr .cr-icon {position: absolute;font-size:0.7em;line-height: 0;top: 48%;left: 17%;}
+.checkbox label input[type="checkbox"] {display: none;}
+.checkbox label input[type="checkbox"]+.cr>.cr-icon {opacity: 0;}
+.checkbox label input[type="checkbox"]:checked+.cr>.cr-icon {opacity: 1;background:#17739d}
+ .checkbox label input[type="checkbox"]:checked+.cr{background:#17739d;color:#fff;border: 1px solid #17739d;}
+/*!
+*Purpose:Buttons
+*/
+.btn {padding: 4px 16px;font-size: 12px;border-radius: 3px; font-family: "Lato"; font-weight: bold;}
+.btn-primary {background-color:#17739d;color: #fff;BORDER-COLOR:17739d;}
+.btn-primary:hover {background-color: #17739d;border-color: #17739d;color: #fff;}
+.btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn.focus:active, .btn.active.focus{outline:none;background:#17739d;border:1px solid #17739d;box-shadow:none}
+.actionButton button{margin-right:5px}
+.actionButton {clear:both;margin: 0 auto;padding-bottom: 10px;padding-top: 10px;width: 190px;}
+.btn-default{background:#fff ! important;color:#333 ! important;border:1px solid #ccc ! important}
+.buynow{background:#FBB152 ! important;border:1px solid #FBB152 ! important;color:rgb(48,48,48) ! important;}
+.actionBtn{margin:15px 0px}
+.email label{color: #17739d;font-family: "Lato"; font-size: 14px; font-weight: bold;}
+.email input{border:1px solid #ccc;padding:4px 4px;font-family: "Lato"; font-size: 12px;color:#666;width:230px;margin:0 auto}
+#email .modal-dialog{width:400px}
+.alert-success{display:none;}
+.alert{padding: 15px 5px;}
+.alert-success p{font-family: "Montserrat"; font-size: 12px;font-weight:normal;text-align:center}
+.modal-footer p{text-align:center}
+.disclaimer{font-family:arial; font-size: 12px;font-weight:normal;color: blue;margin:10px 0px;line-height: 11px;}
+.goog-te-gadget-simple .goog-te-menu-value span {font-weight: normal;font-size: 12px;}
+.policyDet{width:110px;float:left}
+.removepolicy{width:38px;float:left}
+/*Media Queries*/	
+@media (max-width: 767px){
+.number{float:none}
+.goog-te-gadget .goog-te-combo {width: 100px !important;font-size: 9px !important;margin-left: 12px !important;margin-top: 3px !important;}
+.goog-te-gadget .goog-te-combo option{font-size: 9px !important;padding:0px ! important;}
+.number {margin: 15px 1px 2px 1px ! important;}
+#email .modal-dialog{width:auto}
+.mainWrapper {width:auto}
+.mainNav .navbar-nav {margin: 4.5px -15px;}
+.mainNav{background-color: #18749d ! important;}
+.wrapper{width:90%;margin:0 auto}
+.glyphicon-plus,.glyphicon-minus{float:right; font-size: 11px;}
+.dropdown-toggle > img {float: right;}
+.seePlanDetail label {padding-top: 0;}
+.navbar-nav > li > a {border-bottom:1px solid #4690b1 ! important}
+.navbar-nav > li:last-child > a {border-bottom:none ! important;}
+.mainNav .navbar-nav  li{font-size: 13px;letter-spacing: 0px;line-height: 50px;color: #fff ! important;font-family: "Montserrat";font-weight: bold;}
+.mainNav .navbar-nav  li li:last-child{margin-bottom:10px}
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
+    background-color: transparent;color: #fff;}
+.mainNav .navbar-default .navbar-nav .open .dropdown-menu > li > a {color: #fff;white-space: normal;}
+.mainNav  .nav > li > a {color:#fff;}
+.mainNav .navbar-nav  li  li{font-size: 12px;letter-spacing: 0px;line-height: 28px;}
+.navbar-default .navbar-nav .open .dropdown-menu > li > a {color: #fff;white-space:normal;line-height: 25px;}
+.mainNav .nav.navbar-nav {padding:0px 25px;}
+.mainNav .navbar-nav .open .dropdown-menu > li > a, .navbar-nav .open .dropdown-menu .dropdown-header {padding: 5px;font-family: arial; font-size: 13px;}
+.navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,.navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {color: #fff;}
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {color: #fff;}
+.dropdown-toggle > img {display:block ;}
+.mainNav .open a[aria-expanded="true"]{background:transparent url("../images/minus.jpg") no-repeat scroll right 5px center;}
+.mainNav a[aria-expanded="false"]{background:transparent url("../images/plus.jpg") no-repeat scroll right 5px center;}
+.navbar-nav > li > a {padding:13px 0px;}
+.menu{display:block;float: right;}
+.logoTitle{font-size:17px}
+.nav.navbar-nav {padding-left: 20px;}
+.navbar-default .navbar-toggle {border-color: #17739d;background: #17739d;border-radius:3px;}
+.navbar-toggle {border-radius: 0px;padding: 5px 5px; margin-bottom: 6px;margin-right:0px;margin-top: 12px;}
+.navbar-default .navbar-toggle .icon-bar {background-color: #fff;width:12px;height:1px ! important}
+.maincontent label{color: #17739d;font-size: 10px;margin-bottom:7px;font-size: 12px;}
+.title {font-weight: bold;margin-bottom: 10px;font-size: 13px;}
+.tab-content p {font-size: 10px;}
+.share span{font-size: 12px;}
+.tab-content .form-control {width: 100px;}
+.seePlanDetail {padding: 20px;}
+.seePlanDetail .optionCont > div span {font-size: 11px;margin-left:0px;}
+.boldtext {font-size: 13px ! important;}
+.fixedBen .block:nth-child(1){ padding-left:8px;background:#Fff ! important;}
+.block{width:42%;float:left;padding: 10px 15px;}
+.phone{width:15px;height:15px;}
+.glyphicon-earphone {font-size: 8px;top: 0px;}
+#selectoption li span {margin-top: 6px;}
+.closeBtn {font-size: 11px;}
+}
+@media (min-width: 481px) and (max-width: 767px){
+.panel-title a{font-size: 12px;}
+.panel-title img {width: 16px;}
+.form-control{height:20px}
+.number {float: left !important;}
+.goog-te-gadget .goog-te-combo {margin:17px 10px ! important;width: 110px !important;font-size: 11px !important;}
+}
+@media (min-width: 641px) and (max-width: 767px){
+.tab-content p {font-size: 12px;}
+.maincontent .tab-content a {font-size: 12px;}
+.arrowright {border-bottom: 5px solid transparent;border-left: 7px solid #17739d;border-top: 5px solid transparent;margin-left: 5px;margin-top: 8px;}
+.form-control {font-size:12px}
+.btn {font-size: 12px;}
+.popover-content #selectoption p {font-size: 12px;}
+.comparisonPage .planOptions h3 {font-size: 14px;}
+.comparisonPage .data ul li p {font-size: 12px;}
+.comparisonPage .data ul li {padding: 10px 20px;}
+.fixedBen {padding: 11px 15px;}
+.comparisonPage .optionCont > div {width: 190px;}
+.comparisonPage .optionCont select {font-size: 12px;}
+.seePlanDetail .optionCont > div {margin: 0 auto 10px;width: 81%;}
+.modal-dialog {margin: 50px;}
+.checkbox .cr .cr-icon {top: 44%;}
+.form-group select {font-size: 11px;}
+}
+@media (min-width: 1024px) and (max-width: 1159px){
+.navbar-default .navbar-nav > li > a {font-size: 13px;}
+.mainNav .navbar-nav > li > a {font-size: 10px;}
+}
+@media (min-width: 768px) and (max-width: 1024px){
+.goog-te-gadget .goog-te-combo {width: 134px !important;margin-top: 0px !important;margin-left:10px ! important}
+.number {margin: 17px 10px 5px 10px !important;float: none ! important;}
+}
+
+@media (min-width: 481px) and (max-width: 640px){
+.maincontent label {font-size: 11px;}
+.checkbox label {font-size: 11px;}
+.tab-content p {font-size: 11px;}
+.maincontent .tab-content a {font-size: 11px;}
+.arrowright {border-bottom: 4px solid transparent;border-left: 6px solid #17739d;border-top: 4px solid transparent;
+    margin-left: 5px;margin-top: 9px;}
+.form-control {font-size:11px}
+.btn {font-size: 11px;}
+.popover-title {font-size:12px;padding: 6px 7px;}
+.popover-content #selectoption p {font-size: 12px;}
+.checkbox input[type="checkbox"]:checked + label::before{line-height:11px;}
+.checkbox label::before{width:13px;height:13px}
+.comparisonPage.maincontent label {padding-left: 6px;padding-right: 6px;}
+.comparisonPage .optionCont > div {width: 160px;}
+.comparisonPage .optionCont select {font-size: 11px;}
+.comparisonPage .planOptions h2 {font-size: 18px;}
+.comparisonPage .data ul li p {font-size: 11px;}
+.comparisonPage .planOptions h3 {font-size: 14px;}
+.text{font-size:11px ! important;}
+.seePlanDetail .optionCont > div span {font-size: 11px;margin-left: 0px;}
+.seePlanDetail .optionCont > div {width: 90%;}
+.email label {font-size: 13px}
+.disclaimer{font-size: 11px;line-height:12px}
+
+}
+@media (max-width: 325px){
+.maincontent .tab-content a {font-size: 8px ! important;}
+.comparisonPage .optionCont > div {width: auto;}
+.number { margin: 17px 1px;}
+}	
+@media (max-width: 319px){
+.seePlanDetail .optionCont > div {width: auto ! important;}
+}
+@media (max-width: 480px){
+.container {padding-left: 8px;padding-right: 10px;}
+.table-content th {font-size: 9px;} 
+.nav-tabs > li > a {font-size: 10px;}
+.nav-tabs {width: 300px;}
+.active .icon {margin-left: 62px;}
+.maincontent .tab-content a{font-size: 9px;}
+.tab-content .form-control {width: 70px;}
+.rightCont div {margin-bottom: 0px;}
+.seePlanDetail label {padding-top: 3px;}
+.seePlanDetail .optionCont > div span {padding-top:0px}
+.form-group select {font-size:9px;height: 20px;font-weight:normal}
+.share a{color:#000 ! important;font-size:10px}
+.title {font-size: 11px;}
+.share img{width:10px;height:10px;cursor:pointer}
+.maincontent label {font-size: 10px;}
+.checkbox label {font-size: 10px;}
+.tab-content p {font-size: 10px;}
+.checkbox label:before {width: 12px;height: 12px;margin-right: 7px; }
+.arrowright {border-bottom: 4px solid transparent;border-left: 6px solid #17739d;border-top: 4px solid transparent;margin-left: 5px;margin-top: 9px;}
+.form-control {font-size:10px}
+.btn {font-size: 10px;}
+.checkbox input[type="checkbox"]:checked + label::before{line-height:11px;}
+.popover-title {font-size:11px;}
+.popover-content #selectoption p {font-size: 11px;}
+.panel-title a{font-size: 11px;}
+.styled-select1{margin-right:0px}
+.comparisonPage .panel-heading a[aria-expanded="true"] .accicon{border-left: 6px solid transparent;border-right: 6px solid transparent;border-top: 6px solid #17739d;top:9px;}
+.comparisonPage .panel-title a {padding: 10px 5px;font-size: 10px;line-height: 14px;}
+.comparisonPage .panel-body {padding: 10px 5px;}
+.comparisonPage .planOptions h3 {font-size: 10px;}
+.comparisonPage .planOptions h4 {font-size: 10px;}
+.comparisonPage .optionCont > div label{padding-left: 4px;padding-right: 7px;}
+.comparisonPage .planOptions{padding-left: 8px;padding-right: 7px;}
+.comparisonPage .planOptions h2 {font-size: 17px;padding: 5px;}
+.comparisonPage	.data ul li p {font-size: 10px;}
+.comparisonPage .data ul li {padding: 10px 5px;}
+.comparisonPage .panel-group{padding-left:8px;padding-right:7px;}
+.comparisonPage .optionCont > div {width: 140px;}
+.text{font-size:10px ! important;padding:10px 15px ! important}
+.seePlanDetail .optionCont > div {width: 313px;}
+.seePlanDetail .styled-select1 {margin-right: 0;width: 70px;}
+.seePlanDetail label {font-size: 8px;}
+.seePlanDetail .optionCont > div span {font-size: 8px;margin-left: 0px;padding-right: 0px}
+.seePlanDetail .data ul li p span {font-size: 10px;}
+.seePlanDetail .data ul li {padding: 10px 0;}
+.seePlanDetail {padding: 20px 15px;}
+.seePlanDetail .data ul li p {font-size: 10px;}
+.italics {font-size: 10px;padding: 10px 0 0;}
+.boldtext {font-size: 10px ! important;}
+.seePlanDetail .panel-heading .accicon{margin-left:38%;border-left: 5px solid transparent;border-right: 5px solid transparent;border-top: 5px solid #17739d;}
+.block {padding: 10px 7px;}
+.seePlanDetail .panel-heading .accicon {margin-left: 46%;}
+.seePlanDetail .accicon {top:8px}
+.seePlanDetail .optionCont > div span{margin-top: 3px;}
+.email label {font-size: 12px;}
+.alert-success p {font-size: 10px;}
+.disclaimer{font-size: 10px;line-height:12px}
+.popover{width:200px;}
+.popover-title {font-size: 9px ! important; padding: 4px 5px;}
+.popover-content {font-size: 10px ! important;}
+}
+

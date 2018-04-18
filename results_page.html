@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="vguardApp" ng-controller="vguardCtl as vguardCtl">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Visitor Guard - Results</title>
+		<link href="css/bootstrap.css" rel="stylesheet">
+		<link href="css/reset.css" rel="stylesheet">
+		<link href="css/style.css" rel="stylesheet">	
+		<script src="js/jquery-1.11.1.js" type="text/javascript"></script>
+		<script type="text/javascript">
+			function googleTranslateElementInit() {
+			  new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+			} 
+			function sendEmail() {  
+				$("#successalert").show();
+				$("#emailControl").hide();
+				$("#emailControlBtns").hide();
+			}
+			function reverseEmailOptionDisplay() {
+				$("#successalert").hide();
+				$("#emailControl").show();
+				$("#emailControlBtns").show();
+				$("#emailField").val("");
+			}
+		</script>
+		<script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>		
+		<script src="js/custom.js" type="text/javascript"></script>		
+        <script src="js/vendor/angular/angular.min.js"></script>  
+        <script src="js/vendor/angular/angular-animate.js"></script>
+        <script src="js/app/apps.js"></script>
+        <script src="js/app/controllers/vguard/vguard.js"></script>
+	</head>
+	<body>
+		<!--Header starts here-->
+			<header class="container-fluid">
+					<div class="row subLogo">							
+					<nav class="navbar navbar-default navbar-fixed-top">
+					  <div class="mainWrapper">
+						<!-- Brand and toggle get grouped for better mobile display -->
+						<div class="wrapper navbar-header">
+						  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+							<span class="sr-only"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						  </button>
+						  <div class="logotext">
+						  <a class="navbar-brand" href="#"><span class="logoTitle"> Visitor Guard <sup>&reg;</sup></span>&nbsp; <span class="line">|</span></a>
+						  <p class="subtext">The best value in Vistor Insurance</p></div>
+							<div class="ip_googletranslate">
+								<div class="number"><div class="phone"><span class="glyphicon glyphicon-earphone"></span></div>804.325.1385</div>
+								<div id="google_translate_element" ></div>
+							</div>				  
+						  
+						</div>
+							<!-- Collect the nav links, forms, and other content for toggling -->
+						<div class="mainNav collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+							<ul class="nav navbar-nav">
+								</ul>						 
+								<ul class="nav navbar-nav navbar-right">
+								<li class="dropdown">
+								  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">HOME  </a>
+								  <ul class="dropdown-menu">
+									<li><a href="#"> &#8250; Insurance for Visitors to USA</a></li>
+									<li><a href="#"> &#8250; Group Travel to the US</a></li>
+									<li><a href="#"> &#8250; Insurance for Exchange Visa Visitors, Students</a></li>
+									<li><a href="#"> &#8250; Insurance for International Students</a></li>
+									<li><a href="#"> &#8250; Evacuation and Repatriation Insurance</a></li>
+									<li><a href="#"> &#8250; Dental Insurance for International Students and Visitors.</a></li>
+								  </ul>
+								</li>
+								<li class="dropdown">
+								  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">COMMUNITY</a>
+								  <ul class="dropdown-menu">
+									<li><a href="#"> &#8250; Submenu</a></li>
+									<li><a href="#"> &#8250; Submenu</a></li>
+									<li><a href="#"> &#8250; Submenu</a></li>
+									<li><a href="#"> &#8250; Submenu</a></li>
+								  </ul>
+								</li>
+								<li class="dropdown">
+								  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">SUPPORT</a>
+								  <ul class="dropdown-menu">
+									<li><a href="#"> &#8250; Submenu</a></li>
+									<li><a href="#"> &#8250; Submenu</a></li>
+									<li><a href="#"> &#8250; Submenu</a></li>
+									<li><a href="#"> &#8250; Submenu</a></li>
+								  </ul>
+								</li>
+								<li class="dropdown">
+								  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">COMPANY </a>
+									<ul class="dropdown-menu">
+									<li><a href="#"> &#8250; Submenu</a></li>
+									<li><a href="#"> &#8250; Submenu</a></li>
+									<li><a href="#"> &#8250; Submenu</a></li>
+									<li><a href="#"> &#8250; Submenu</a></li>
+								  </ul>
+								</li>
+								<li> <a href="#" >CONTACT </a></li>
+							  </ul>
+						</div><!-- /.navbar-collapse -->
+					  </div><!-- /.container-fluid -->
+					</nav> 
+					</div>		
+			</header>
+			<!--Header ends here-->
+			<!--Section starts here-->
+			<section class="container">
+				<div class="maincontent">
+				  <div class="share">
+						<p><a class="shareFiles" href="#"><img src="images/share.png"/>Share result</a>
+						<span class="shareIcons">
+						<a data-toggle="modal" data-target="#email"><img src="images/env.png"/></a>
+						<a href="whatsapp://send?text=http://webdevelopmentscripts.com" target="_blank"><img src="images/whatsup_icon.png"/></a>
+						</span>	
+						<a href="#"><button type="button" class="flrgt btn btn-primary">RESET</button></a></p>
+				  </div>
+				   <div class="panel-group" id="filteraccordion">
+						  <div class="panel panel-default">
+							<div class="panel-heading">
+							  <h4 class="panel-title" ><a data-toggle="collapse" data-parent="#filteraccordion" href="#collapse1">
+								<img src="images/dropdown-arrow1.jpg"/>Filter Options</a>
+							  </h4>
+							</div>
+							<div id="collapse1" class="panel-collapse collapse in">
+							  <div class="panel-body">
+									<div class="filterData">
+										 <div class="row form-group">
+											 <div class="col-md-4 col-sm-6 col-xs-6"><label   >Show Benefit Level For</label></div>
+											 <div class="styled-select styled-new">
+												 <select class="form-control" >
+													<option>--Select--</option>
+													<option>2</option>
+													<option>3</option>
+												  </select>
+											 </div>
+											</div>
+											 <div class="row form-group">
+											 <div class="col-md-4 col-sm-6 col-xs-6"><label   > Filter Plans for Benefits</label></div>
+											 <div class="styled-select styled-new"><select class="form-control">
+												<option>--Select--</option>
+												<option>2</option>
+												<option>3</option>
+											  </select>
+											 </div>
+											</div>
+											<div class="row form-group">
+											 <div class="col-md-4 col-sm-6 col-xs-6"><label   >Sort Plans By</label></div>
+											 <div class="styled-select styled-new"><select class="form-control" >
+												<option>--Select--</option>
+												<option>Low to High</option>
+												<option>High to Low</option>
+											  </select>
+											 </div>
+											</div>
+										</div>							  
+									</div>
+								</div>
+							</div>
+						</div> 
+					<!-- Nav tabs -->
+					<ul class="nav nav-tabs">
+					  <li class="active"><a href="#first" data-toggle="tab">Limited Benefit Plans</a> <div class="icon"></div></li>					 
+					  <li><a href="#second" data-toggle="tab">Comprehensive Plans</a><div class="icon"></div></li>
+					</ul>
+					<!-- Nav tabs content -->
+					<div class="tab-content">
+						<div id="first" class="tab-pane active ">		
+							<div class="row planContent">
+								<div class="col-md-4 col-sm-4 col-xs-5">
+									<h4 class="title">Inbound Guest</h4>
+									<p class="amount">&#36;51.00</p>
+									<p>30 days of coverage</p>				
+									<p class="checkbox">
+									  <label><input id="selectPolicyCheckBox1" type="checkbox" value="" data-ng-disabled="canDisableSelection('1')" data-ng-click="vguardCtl.setSelectedPolicy('1','Safe ', '$1.00')"><span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+									   Select to compare plan</label>
+									</p>
+										<div id="selectoption" class="hide" ng-show="flag_showComparisonWindow">
+										<h2>Selected Item</h2>
+										<div class="closeBtn" data-ng-click="vguardCtl.removeAllPoliciesForComparison()">X</div>
+										<ul>
+												<li ng-repeat="p in selectedPolicies"><div class="policyDet"><p>{{p.PolicyName}}</p>
+												<p class="amount">{{p.PremiumDetail.PremiumTotalAmount}}</p></div><div class="removepolicy"><span data-ng-click="vguardCtl.removePolicyForComparison(p.PolicyId)" class="closeBtn">X</span></div></li>
+										</ul>
+										<p class="compareBtn"><button type="button" onclick="window.location.href='comparison.html'" class="buynow btn btn-primary">Compare</button></p>
+									</div>
+								</div>
+								<div class="col-md-4 col-sm-4 col-xs-3">
+									<div class="row form-group policy">
+										<label data-placement="bottom" data-toggle="popover" data-trigger="focus" tabindex="0" data-html="true" title="Maximum Medical Expenses" data-content="Maximum eligible medical expenses that the plan will cover.">Policy Max <span class="glyphicon glyphicon-info-sign"></span></label>
+		
+										<div class="styled-select1 styled-new">
+									<select class="form-control" data-ng-model="vguardCtl.coverageLimit" onchange="callCh()" data-ng-change="vguardCtl.changeCoverageLimit('1')">
+												<option>&#36;45,500</option>
+												<option>2</option>
+												<option>3</option>
+												<option>4</option>
+											</select>
+										</div>
+									</div>
+									
+									<div class="row form-group deduct">
+										<label data-placement="bottom" data-toggle="popover" data-trigger="focus" tabindex="0" data-html="true" title="Deductable" data-content="The initial amount of medical expenses that you are responsible for; plan will begin to pay only after you have paid the deductible." >Deductable <span class="glyphicon glyphicon-info-sign"></span></label>
+										<div class="styled-select1 styled-new">
+											<select class="form-control">
+												<option>&#36;550</option>
+												<option>2</option>
+												<option>3</option>
+												<option>4</option>
+											</select>
+										</div>
+									</div>
+									<div class="row form-group">
+										<button type="button" class="buynow btn btn-primary" data-toggle="popover" title="Maximum Medical Expenses" data-content="Maximum eligible medical expenses that the plan will cover.">Buy Now</button>
+								   </div>
+								</div>
+								<div class="col-md-4 col-sm-4 col-xs-4 rightCont">
+									<div><label >Benefits</label><p>Restricted</p></div>
+									<div><label>Pre-ex cover</label>
+									<p>Covered upto &#36;45,000<br/> Sublimits apply when treatment is</p></div>
+									<div><a data-toggle="modal" data-target="#myModal" data-ng-click="alert('Clicked');vguardCtl.viewVguardCtrl('10')">SEE Plan Detail<span class="arrowright"></span></a></div>
+								</div>
+							</div>
+							<div class="row planContent">
+								<div class="col-md-4 col-sm-4 col-xs-5">
+									<h4 class="title">Inbound Guest</h4>
+									<p class="amount">&#36;51.00</p>
+									<p>30 days of coverage</p>									
+									<p class="checkbox">
+									  <label><input type="checkbox" id="selectPolicyCheckBox2" value="" title="Selected Item" data-ng-disabled="canDisableSelection('2')" data-ng-click="vguardCtl.setSelectedPolicy('2','InB 2', '$2.00')"><span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+									   Select to compare plan</label>
+									</p>
+								</div>
+								<div class="col-md-4 col-sm-4 col-xs-3">
+									<div class="row form-group">
+										<label   >Policy Max</label>
+										<div class="styled-select1 styled-new">
+											<select class="form-control" id="sel1">
+												<option>&#36;45,500</option>
+												<option>2</option>
+												<option>3</option>
+												<option>4</option>
+											</select>
+										</div>
+									</div>
+									<div class="row form-group">
+										<label   >Deductable</label>
+										<div class="styled-select1 styled-new">
+											<select class="form-control" id="sel1">
+												<option>&#36;550</option>
+												<option>2</option>
+												<option>3</option>
+												<option>4</option>
+											</select>
+										</div>
+									</div>
+									<div class="row form-group">
+										<button type="button" class="buynow btn btn-primary">Buy Now</button>
+								   </div>
+								</div>
+								<div class="col-md-4 col-sm-4 col-xs-4 rightCont">
+									<div><label   >Benefits</label><p>Restricted</p></div>
+									<div><label>Pre-ex cover</label>
+									<p>Covered upto &#36;45,000<br/> Sublimits apply when treatment is</p></div>
+									<div><a data-toggle="modal" data-target="#myModal" data-ng-click="alert('Clicked');vguardCtl.viewVguardCtrl('10')">See Plan Detail<span class="arrowright"></span></a></div>
+								</div>
+							</div>
+							<div class="row planContent">
+								<div class="col-md-4 col-sm-4 col-xs-5">
+									<h4 class="title">Inbound Guest</h4>
+									<p class="amount">&#36;51.00</p>
+									<p>30 days of coverage</p>									
+									<p class="checkbox">
+									  <label><input type="checkbox" id="selectPolicyCheckBox3" value="" data-ng-disabled="canDisableSelection('3')" data-ng-click="vguardCtl.setSelectedPolicy('3','InB 3', '$3.00')"><span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+									   Select to compare plan</label>
+									</p>
+								</div>
+								<div class="col-md-4 col-sm-4 col-xs-3">
+									<div class="row form-group">
+										<label   >Policy Max</label>
+										<div class="styled-select1 styled-new">
+											<select class="form-control" id="sel1">
+												<option>&#36;45,500</option>
+												<option>2</option>
+												<option>3</option>
+												<option>4</option>
+											</select>
+										</div>
+									</div>
+									<div class="row form-group">
+										<label   >Deductable</label>
+										<div class="styled-select1 styled-new">
+											<select class="form-control" id="sel1">
+												<option>&#36;550</option>
+												<option>2</option>
+												<option>3</option>
+												<option>4</option>
+											</select>
+										</div>
+									</div>
+									<div class="row form-group">
+										<button type="button" class="buynow btn btn-primary">Buy Now</button>
+								   </div>
+								</div>
+								<div class="col-md-4 col-sm-4 col-xs-4 rightCont">
+									<div><label   >Benefits</label><p>Restricted</p></div>
+									<div><label>Pre-ex cover</label>
+									<p>Covered upto &#36;45,000<br/> Sublimits apply when treatment is</p></div>
+									<div><a data-toggle="modal" data-target="#myModal"  data-ng-click="alert('Clicked');vguardCtl.viewVguardCtrl('10')">See Plan Detail<span class="arrowright"></span></a></div>
+								</div>
+							</div>
+						</div>
+						<div id="second" class="tab-pane">
+							<div class="row planContent">
+								<div class="col-md-4 col-sm-4 col-xs-5">
+									<h4 class="title">Inbound Guest</h4>
+									<p class="amount">&#36;51.00</p>
+									<p>30 days of coverage</p>									
+									<p class="checkbox">
+									  <label><input type="checkbox" id="selectPolicyCheckBox4" value="" data-ng-disabled="canDisableSelection('4')" data-ng-click="vguardCtl.setSelectedPolicy('4','InB 4', '$4.00')"><span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+									   Select to compare plan</label>
+									</p>									
+									<div id="selectoption" class="hide" ng-show="flag_showComparisonWindow">
+									<h2>Selected Item</h2>
+										<div class="closeBtn" data-ng-click="vguardCtl.removeAllPoliciesForComparison()">X</div>
+										<ul>
+												<li ng-repeat="p in selectedPolicies"><p>{{p.PolicyName}}<span data-ng-click="vguardCtl.removePolicyForComparison(p.PolicyId)" class="closeBtn">X</span></p><p class="amount">{{p.PremiumDetail.PremiumTotalAmount}}</li>
+										</ul>
+										<p class="compareBtn"><button type="button" onclick="window.location.href='comparison.html'" class="buynow btn btn-primary">Compare</button></p>
+									</div>
+								</div>
+								<div class="col-md-4 col-sm-4 col-xs-3">
+									<div class="row form-group">
+										<label   >Policy Max</label>
+										<div class="styled-select1 styled-new">
+											<select class="form-control" id="sel1">
+												<option>&#36;45,500</option>
+												<option>2</option>
+												<option>3</option>
+												<option>4</option>
+											</select>
+										</div>
+									</div>
+									<div class="row form-group">
+										<label   >Deductable</label>
+										<div class="styled-select1 styled-new">
+											<select class="form-control" id="sel1">
+												<option>&#36;550</option>
+												<option>2</option>
+												<option>3</option>
+												<option>4</option>
+											</select>
+										</div>
+									</div>
+									<div class="row form-group">
+										<button type="button" class="buynow btn btn-primary">Buy Now</button>
+								   </div>
+								</div>
+								<div class="col-md-4 col-sm-4 col-xs-4 rightCont">
+									<div><label   >Benefits</label><p>Restricted</p></div>
+									<div><label>Pre-ex cover</label>
+									<p>Covered upto &#36;45,000<br/> Sublimits apply when treatment is</p></div>
+									<div><a data-toggle="modal" data-target="#myModal">See Plan Detail<span class="arrowright"></span></a></div>
+								</div>
+							</div>
+							<div class="row planContent">
+								<div class="col-md-4 col-sm-4 col-xs-5">
+									<h4 class="title">Inbound Guest</h4>
+									<p class="amount">&#36;51.00</p>
+									<p>30 days of coverage</p>									
+									<p class="checkbox">
+									  <label><input type="checkbox" id="selectPolicyCheckBox5" value="" data-ng-disabled="canDisableSelection('5')" data-ng-click="vguardCtl.setSelectedPolicy('5','InB 5', '$5.00')"><span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+									   Select to compare plan</label>
+									</p>
+								</div>
+								<div class="col-md-4 col-sm-4 col-xs-3">
+									<div class="row form-group">
+										<label   >Policy Max</label>
+										<div class="styled-select1 styled-new">
+											<select class="form-control" id="sel1">
+												<option>&#36;45,500</option>
+												<option>2</option>
+												<option>3</option>
+												<option>4</option>
+											</select>
+										</div>
+									</div>
+									<div class="row form-group">
+										<label   >Deductable</label>
+										<div class="styled-select1 styled-new">
+											<select class="form-control" id="sel1">
+												<option>&#36;550</option>
+												<option>2</option>
+												<option>3</option>
+												<option>4</option>
+											</select>
+										</div>
+									</div>
+									<div class="row form-group">
+										<button type="button" class="buynow btn btn-primary">Buy Now</button>
+								   </div>
+								</div>
+								<div class="col-md-4 col-sm-4 col-xs-4 rightCont">
+									<div><label   >Benefits</label><p>Restricted</p></div>
+									<div><label>Pre-ex cover</label>
+									<p>Covered upto &#36;45,000<br/> Sublimits apply when treatment is</p></div>
+									<div><a data-toggle="modal" data-target="#myModal" data-ng-click="alert('Clicked');vguardCtl.viewVguardCtrl('10')">PPL Detail<span class="arrowright"></span></a></div>
+								</div>
+							</div>
+										
+						</div>
+					</div> 
+				</div>
+				<!-- Popup Details -->
+				
+								<div class="modal fade" id="email" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+								<form name="emailForm" onsubmit="sendEmail()">
+					  <div class="modal-dialog" role="document">
+							<div class="modal-content">
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close" onclick="reverseEmailOptionDisplay()">X</button>
+							 <div class="modal-body">
+							 <div class="alert alert-success alert-dismissable" id="successalert">
+								<p><strong>The result has been emailed to you successfully !</strong></p>
+							</div>
+							 <div class="form-group email" id="emailControl">
+									<input name="emailField" id="emailField" type="email" placeholder="Your Email Id" class="form-control" validate="true" required="true"/>
+							 </div>
+													
+							 </div>
+							 <div class="modal-footer" id="emailControlBtns">
+								<p>
+									<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+									<input type="submit" class="btn btn-primary submitBtn" value="Submit"/>
+								</p>
+							</div>
+							
+							</div>
+							</div>
+							</form>
+							</div>
+				
+			<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+			  <div class="modal-dialog" role="document">
+				<div class="modal-content">
+				  <button type="button" class="close" data-dismiss="modal" aria-label="Close">X</button>
+				  <div class="modal-body seePlanDetail" ng-if="dataLoaded">
+						<h3>{{policy.PolicyName}}</h3>
+						<div class="row">
+							<div class="amount col-lg-6 col-md-6 col-sm-6 col-xs-6">
+								<p>{{policy.PremiumDetail.Currency}}{{policy.PremiumDetail.PremiumTotalAmount}}</p>
+							</div>
+							<div class="amount col-lg-6 col-md-6 col-sm-6 col-xs-6">
+								<a href="{{policy.PremiumDetail.BuyNowUrl}}"><button type="button" class="buynow btn btn-primary flrgt">Buy Now</button></a>
+							</div>
+						</div>
+						<div class="panel-group" id="seePlanDetail">
+							<div class="panel panel-default">
+								<div class="panel-heading">
+								  <h4 class="panel-title">
+									<a data-toggle="collapse" data-parent="#seePlanDetail" href="#planInfo">Plan Info<span class="accicon"></span></a>
+								  </h4>
+								</div>
+								<div id="planInfo" class="panel-collapse collapse in">
+									<div class="panel-body">
+										<div class="data">
+											<ul>
+												<li><p class="boldtext">{{policy.PlanInfo.PolicyTypeName}}</p>
+												<p class="link"><a href="{{policy.PlanInfo.PlanBrochureUrl}}"><span>Plan Brochure<span class="glyphicon glyphicon-arrow-right"></span></span></a></p></li>												
+											</ul>
+										</div>						  
+									</div>
+								</div>
+							</div>
+							<div class="panel panel-default">
+								<div class="panel-heading">
+								  <h4 class="panel-title">
+									<a data-toggle="collapse" data-parent="#seePlanDetail" href="#premiumDetail">Premium Detail<span class="accicon"></span></a>
+								  </h4>
+								</div>
+								<div id="premiumDetail" class="panel-collapse collapse in">
+									<div class="panel-body">
+										<div class="data">
+											<ul>
+												<li><p><span>Traveller:</span> <span class="flrgt">{{policy.PremiumDetail.Currency}}{{policy.PremiumDetail.TravellerAmount}}</span></p></li>
+												<li><p><span>Spouse:</span><span class="flrgt">{{policy.PremiumDetail.Currency}}{{policy.PremiumDetail.SpouseAmount}}</span></p></li>
+												<li><p><span>Application fee:</span><span class="flrgt">{{policy.PremiumDetail.Currency}}{{policy.PremiumDetail.ApplicationFeeAmount}}</span></p></li>
+												<li><p><span class="boldtext">TOTAL:</span><span class="flrgt">{{policy.PremiumDetail.Currency}}{{policy.PremiumDetail.PremiumTotalAmount}}</span></p></li>
+												<li><p><span>346 days of coverage:</span> <a href="{{policy.PremiumDetail.BuyNowUrl}}"><button type="button" class="buynow btn btn-primary flrgt">Buy Now</button></a></p></li>
+											</ul>
+										</div>						  
+									</div>
+								</div>
+							</div>
+							<div class="panel panel-default">
+								<div class="panel-heading">
+								  <h4 class="panel-title">
+									<a data-toggle="collapse" data-parent="#seePlanDetail" href="#planDetail">Plan Detail<span class="accicon"></span></a>
+								  </h4>
+								</div>
+								<div id="planDetail" class="panel-collapse collapse in">
+									<div class="panel-body">
+										<div class="data">
+											<ul>
+												<li><p><span>Underwriter:<span class="glyphicon glyphicon-info-sign"></span></span><span class="flrgt"> {{policy.Plan.UnderwriterName}}</span></p></li>
+												<li><p><span>AM Rating:</span><span class="flrgt">{{policy.Plan.AMRating}}</span></p></li>
+												<li><p><span>Direct Billing:</span><span class="flrgt">{{policy.Plan.DirectBilling}}</span></p></li>
+												<li><p><span>Hospitals/Doctors:</span> <span class="flrgt">{{policy.Plan.HospitalDoctors}}</span></p></li>
+											</ul>
+										</div>						  
+									</div>
+								</div>
+							</div>
+							<div class="panel panel-default">
+								<div class="panel-heading">
+								  <h4 class="panel-title">
+									<a data-toggle="collapse" data-parent="#seePlanDetail" href="#planLimits">Plan Limits<span class="accicon"></span></a>
+								  </h4>
+								</div>
+								<div id="planLimits" class="panel-collapse collapse in">
+									<div class="panel-body">
+										<div class="optionCont">
+											<div class="row form-group">
+												<label class="col-lg-4 col-md-4 col-sm-4 col-xs-4"   >Policy Max <span class="glyphicon glyphicon-info-sign"></span></label>
+													<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 styled-select1 styled-new">
+														<select class="form-control" id="sel1" onchange="tempCall()">
+														<option ng-repeat="x in policyMaxAmountList" value="{{x}}">{{x}}</option>
+														</select> 
+													</div><span class="col-lg-4 col-md-4 col-sm-4 col-xs-4">Per Injury Sickness</span>
+											</div>	
+											<div class="row form-group">
+												<label class="col-lg-4 col-md-4 col-sm-4 col-xs-4"   >Deductable <span class="glyphicon glyphicon-info-sign"></span></label>
+													<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 styled-select1 styled-new">
+														<select class="form-control" id="sel2">
+														<option ng-repeat="x in policy.DeductableAmountList" value="{{x}}">{{x}}</option>
+														</select> 
+													</div><span class="col-lg-4 col-md-4 col-sm-4 col-xs-4">Per Injury Sickness</span>
+											</div>
+											
+										</div>
+										<div class="data">
+											<ul>
+												<li><p><span>Co-Insuranced Infomation:</span></p><p> Varies: plan pays 100% of covered amount.Then you pay the rest coveredd amount. varies with type of medical service</p></li>
+											</ul>
+										</div>						  
+									</div>
+								</div>
+							</div>
+							<div class="panel panel-default">
+								<div class="panel-heading">
+								  <h4 class="panel-title">
+									<a data-toggle="collapse" data-parent="#seePlanDetail" href="#medicalBenefits">Medical Benefits<span class="accicon"></span></a>
+								  </h4>
+								</div>
+								<div id="medicalBenefits" class="panel-collapse collapse in">
+								  <div class="panel-body">
+										<div class="data">
+										<p class="italics">Several Sub-limits Exist</p>
+											<ul>
+												<li><p><span>Hospital Information:</span><span class="glyphicon glyphicon-info-sign"></span> </p><p>&#36;1260 max per day; 30 day max per injury </p></li>
+												<li><p><span>Intensive Care:</span></p><p>&#36;1855 max per day; 8 day max per injury sickness</p></li>
+												<li><p><span>Surgery:</span></p><p>&#36;1855 max per day; 8 day max per injury sickness</p></li>
+												<li><p><span>Intensive Care:</span><span class="glyphicon glyphicon-info-sign"></span></p><p>&#36;1855 max per day; 8 day max per injury sickness</p></li>
+											</ul>
+										</div>						  
+									</div>
+								</div>								
+							</div>	
+							<div class="panel panel-default">
+								<div class="panel-heading">
+								  <h4 class="panel-title">
+									<a data-toggle="collapse" data-parent="#seePlanDetail" href="#otherBenefits">Other Benefits<span class="accicon"></span></a>
+								  </h4>
+								</div>
+								<div id="otherBenefits" class="panel-collapse collapse in">
+								  <div class="panel-body">
+										<div class="data">
+											<ul>
+												<li><p><span>Renewals:</span> </p><p>&#36;50 per visit, 1 visit per day,<br/> 10 visits per injury sickness</p></li>
+												<li><p><span class="highlight">Pre Existing Conditions: <span class="glyphicon glyphicon-info-sign"></span></span></p><p>Covered upto $45,000 (sublimits apply) when treatment is obtained within 24 hrs for acute onset of pre-existing conditions</p></li>
+												<li><p><span>Evacuation:</span><span class="flrgt">&#36;50,000 </span></p></li>
+											</ul>
+										</div>						  
+									</div>
+								</div>								
+							</div>	
+						</div> 
+				  </div>
+				  <div class="modal-body seePlanDetail" ng-if="!dataLoaded">
+				  <div><span class="glyphicon glyphicon-refresh glyphicon-refresh-animate"></span> Loading...</div>
+				  </div>
+				</div>
+			  </div>
+			</div> 
+			
+			<!--<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+
+			  <div class="modal-dialog" role="document" ng-if="dataLoaded">
+				<div class="modal-content">
+				  <button type="button" class="close" data-dismiss="modal" aria-label="Close">X</button>
+				  <div class="modal-body seePlanDetail">
+						<h3>{{policy}}</h3>
+				</div>
+				  
+				</div>
+			  </div>
+			  <div class="modal-dialog" role="document" ng-if="!dataLoaded">
+				<div class="modal-content">
+				  <button type="button" class="close" data-dismiss="modal" aria-label="Close">X</button>
+				  <div class="modal-body seePlanDetail">
+						<h3>Data loading....</h3>
+				</div>
+				  
+				</div>
+			  </div>
+
+			</div> -->
+			
+			<p class="disclaimer">
+             	Disclaimer: You are reviewing plan information that we indexed, compiled &amp; processed most recently; we cannot guarantee that it is final &amp; binding. You will be provided the final insurance contract pricing, terms &amp; conditions when you proceed to the next steps by clicking the 'Buy' button.
+	    	<br><font color="black">*</font> denotes that the final rate will be confirmed at the time of applying
+	    </p>
+	</section>
+	<script src="js/bootstrap.min.js" type="text/javascript"></script>
+		
+	</body>	
+</html>
